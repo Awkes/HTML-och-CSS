@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <title>Exempel 3</title>
 </head>
+
 <body>
     <h1>Länkar</h1>
     <h2>A-elementet (Anchor)</h2>
-    
+
     <h3>Absoluta länkar (externa)</h3>
-        <p>
-            Absoluta länkar används för att länka till externa sidor.
-        </p>
     <p>
-        <a href="http://www.nackademin.se" target="_blank">Länk till Nackademin</a><br>
-        <a href="http://www.w3schools.com" target="_blank">W3Schools</a>
+        Absoluta länkar används för att länka till externa sidor.
     </p>
+    <a href="http://www.nackademin.se" target="_blank">Länk till Nackademin</a><br>
+    <a href="http://www.w3schools.com" target="_blank">W3Schools</a>
 
-    <h3>Länkar till bilder</h3>
-    <p>
-        <a href="https://cnet3.cbsistatic.com/img/wUFSDhb2UcS8lz4WjuHqYB6ydyU=/936x527/2009/03/13/e9de6f62-f0ff-11e2-8c7c-d4ae52e62bcc/CERN02.jpg" target="_blank">En gammal bild på Tim Berners Lee</a><br>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/1045px-Steve_Jobs_Headshot_2010-CROP.jpg" target="_blank">En bild på Steve Jobs</a>
-    </p>
+    <h4>Länkar till bilder</h4>
+    <a href="https://cnet3.cbsistatic.com/img/wUFSDhb2UcS8lz4WjuHqYB6ydyU=/936x527/2009/03/13/e9de6f62-f0ff-11e2-8c7c-d4ae52e62bcc/CERN02.jpg"
+        target="_blank">En gammal bild på Tim Berners Lee</a><br>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/1045px-Steve_Jobs_Headshot_2010-CROP.jpg"
+        target="_blank">En bild på Steve Jobs</a>
 
-    <h3>Relativa länkar (lokala)</h3>
-    <p>
 
-    </p>
+    <h3>Relativa länkar (interna)</h3>
+    <h4>Länkar till filer i samma mapp.</h4>
+    <a href="exempel-01.html">Lektion 2 - Exempel 1</a><br>
+    <a href="ovning-01.html">Lektion 2 - Övning 1</a><br>
+    <a href="ovning-03.html">Lektion 2 - Övning 3</a>
+
+    <h4>Länk till mapp.</h4>
+    <a href="ovning-webbplats">Lektion 2 - Övning Webbplats</a>
+
+    <h4>Länk till fil i mapp.</h4>
+    <a href="ovning-webbplats/hem.html">Lektion 2 - Övning Webbplats - Startsida</a>
+
+    <h4>Länkar till filer högre upp i filträdet.</h4>
+    <a href="../Lektion-01/exempel-01.html">Lektion 1 - Exempel 1</a><br>
+    <a href="../../../Yrket%20Front-end-utvecklare%202018.pdf" target="_blank">Yrket front-end-utvecklare 2018 (PDF)</a><br>
+    <a href="../../../Yrket%20Front-end-utvecklare%202018.pdf" download>Ladda ner, Yrket front-end-utvecklare 2018
+        (PDF)</a><br>
+    <a href="../">Upp en nivå i filträdet</a>
 </body>
+
 </html>
