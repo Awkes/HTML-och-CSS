@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel 2</title>
+</head>
+
+<body>
+    <h1>Tabeller</h1>
+
+    <table border="1">
+        <!-- border ska inte användas, men ska använda css -->
+        <tr>
+            <th>Namn</th>
+            <th>E-post</th>
+        </tr>
+        <tr>
+            <td>Andreas</td>
+            <td>andreas@fakemail.com</td>
+        </tr>
+        <tr>
+            <td>Erika</td>
+            <td>erika@fakemail.com</td>
+        </tr>
+        <tr>
+            <td>Kurt-Kent</td>
+            <td>kurt-kent@fakemail.com</td>
+        </tr>
+    </table>
+
+    <h2>Bilder i en tabell</h2>
+    <table border="1">
+        <tr>
+            <th>En bild</th>
+        </tr>
+        <tr>
+            <td><img src="https://picsum.photos/300" alt="En bild"></td>
+        </tr>
+    </table>
+
+    <h2>Övning</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Schema</th>
+        </tr>
+        <tr>
+            <th>Dag</th>
+            <th>Aktivitet</th>
+        </tr>
+        <tr>
+            <th>Måndag</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Tisdag</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Onsdag</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Torsdag</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Fredag</th>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>Attributet scope</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th scope="row">Total sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
