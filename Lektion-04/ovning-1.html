@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Lektion 4 - Övning 1</title>
+    <style>
+    table,th,td {
+        border: 1px solid #000;
+    }
+    th {
+        background-color: mediumpurple;
+    }
+    </style>
+</head>
+<body>
+    <h1>Övning 1</h1>
+    <p>
+        <form>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="eyecolor">Eye color</label></td>
+                    <td>
+                        <select id="eyecolor">
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="brown">brown</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Check all that apply</td>
+                    <td>
+                        <input type="checkbox" name="6feet" id="6feet"><label for="6feet">Over 6 feet tall</label><br>
+                        <input type="checkbox" name="6feet" id="200pounds"><label for="200pounds">Over 200 pounds</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="athletic">Describe your athletic ability:</label><br>
+                        <textarea name="athletic" id="athletic" cols="38" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <input type="button" value="Enter my information">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </p>
+
+
+</body>
+</html>
