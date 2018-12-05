@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <style>
+        /* General rules */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 2em;
+        }
+
+        #title,
+        #stats,
+        #board,
+        #score,
+        #controls {
+            border: 1px solid #000;
+            border-radius: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile */
+
+        #container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Desktop */
+        /* Media Queries */
+        
+        @media(min-width: 800px) {
+            #container {
+                width: 800px;
+                height: 500px;
+                margin: 0 auto;
+            }
+
+
+            #title {
+                height: 100px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            #stats {
+                height: 190px;
+                margin-bottom: 10px;
+            }
+
+            #board {
+                height: 300px;
+                padding: 10px;
+            }
+
+            .left {
+                float: left;
+                width: 190px;
+                margin-right: 10px;
+            }
+
+            .right {
+                float: right;
+                width: 600px;
+            }
+
+            .clearfix {
+                clear: both;
+            }
+
+            /* Grid */
+            @supports(display: grid) {
+
+                /* Nollställa height och width */
+                #title,
+                #stats,
+                #board,
+                #score,
+                #controls {
+                    height: initial;
+                    width: initial;
+                }
+
+                #container {
+                    display: grid;
+                    grid-template-columns: 200px 1fr;
+                    grid-template-rows: auto 1fr auto;
+                }
+
+                #title {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+
+                #stats {
+                    grid-column: 1;
+                    grid-row: 2;
+
+                }
+
+                #score {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+
+                #board {
+                    grid-column: 2;
+                    grid-row: 1 / span 2;
+                    margin-bottom: 10px;
+                }
+
+                #controls {
+                    grid-column: 2;
+                    grid-row: 3;
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- rad 1 -->
+        <div id="title" class="left">Game</div>
+        <div id="board" class="right">Board</div>
+        <div id="stats" class="left">Stats</div>
+
+        <div class="clearfix"></div>
+
+        <!-- rad 2 -->
+        <div id="score" class="left">Score</div>
+        <div id="controls" class="right">Controls</div>
+    </div>
+
+</body>
+
+</html>
