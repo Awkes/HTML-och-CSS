@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,EAAC,IAAI,EAAC,EAAE,EAAC,EAAE,CAAC;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG",
+    "sources": [
+        "exempel-2.sass",
+        "_reset.sass"
+    ],
+    "names": [],
+    "file": "exempel-2.css"
+}

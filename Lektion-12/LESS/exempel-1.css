@@ -1,0 +1,27 @@
+.container {
+  width: 500px;
+  background-color: #BADA55;
+  padding: 10px;
+}
+/* Mixins */
+.bordered {
+  border-top: 1px dashed #000;
+  border-bottom: 1px solid #000;
+}
+.post {
+  color: maroon;
+  border-top: 1px dashed #000;
+  border-bottom: 1px solid #000;
+}
+#small-circle {
+  background-color: #4ca;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+#big-circle {
+  background-color: #4ca;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}

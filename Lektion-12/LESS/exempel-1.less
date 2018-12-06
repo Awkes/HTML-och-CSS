@@ -1,0 +1,40 @@
+// Variabler
+
+@width: 500px;
+@bg-color: #BADA55;
+@main-color: maroon;
+
+.container {
+    width: @width;
+    background-color: @bg-color;
+    padding: 10px;
+}
+
+/* Mixins */
+
+.bordered {
+    border-top: 1px dashed #000;
+    border-bottom: 1px solid #000;
+}
+
+.post {
+    color: @main-color;
+    .bordered;
+}
+
+// OBS! () efter namnet för att regeln inte ska skickas till CSS
+#circle(@size:25px) {
+    background-color: #4ca;
+    border-radius: 100%;
+    width: @size;
+    height: @size;
+}
+
+#small-circle {
+    #circle(25px);
+}
+
+#big-circle {
+    #circle(100px);
+
+}
